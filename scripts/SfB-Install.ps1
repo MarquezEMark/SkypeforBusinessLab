@@ -316,7 +316,7 @@ cd $workingDir
 
 
 #Copy O365 Lab Scripts to user Desktop
-Invoke-WebRequest -Uri https://github.com/ibenbouzid/Office365Scripts/archive/master.zip -OutFile .\Office365Scripts.zip
+Invoke-WebRequest -Uri https://github.com/MarquezEMark/Office365Scripts/archive/master.zip -OutFile .\Office365Scripts.zip
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 [System.IO.Compression.ZipFile]::ExtractToDirectory('.\Office365Scripts.zip','.')
 Copy-Item -Path ".\Office365Scripts-master" -Destination C:\Users\$UserName\Desktop\Scripts -Recurse -ErrorAction Continue
