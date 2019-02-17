@@ -30,9 +30,14 @@ Before starting the deployment there is some steps to follow:
 5. Fill parameters with recommended guidelines then start deployment by clicking the purshase button. (The deployment is free :) nothing to purshase except the normal VM consumption prices) 
 
 
-[![Deploy to Azure](https://azuredeploy.net/deploybutton.svg)](https://azuredeploy.net/)
+## [![Deploy to Azure](https://azuredeploy.net/deploybutton.svg)](https://azuredeploy.net/)
 
-<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fibenbouzid%2FSkypeforBusiness_lab_V3%2Fmaster%2Fazuredeploy.json" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMarquezEMark%2FSkypeforBusinessLab%2Fmaster%2Fazuredeploy.json" target="_blank">
+    <img src="http://azuredeploy.net/deploybutton.png"/>
+</a>
+
+
+<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2FMarquezEMark%2FSkypeforBusinessLab%2Fmaster%2Fazuredeploy.json" target="_blank">
     <img src="http://armviz.io/visualizebutton.png"/>
 </a>
 

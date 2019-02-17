@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "SkypeforBusiness_lab_V3", "SkypeforBusiness_lab_V3.deployproj", "{EF33768E-E0BB-4D37-A0B3-045D03196C6D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF33768E-E0BB-4D37-A0B3-045D03196C6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF33768E-E0BB-4D37-A0B3-045D03196C6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF33768E-E0BB-4D37-A0B3-045D03196C6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF33768E-E0BB-4D37-A0B3-045D03196C6D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C0814E15-0FF2-4D05-B14E-E598BC7F03E3}
+	EndGlobalSection
+EndGlobal
