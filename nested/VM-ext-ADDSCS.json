@@ -203,34 +203,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "[concat(parameters('VMName'), '/Add-ADUsers')]",
-      "type": "Microsoft.Compute/virtualMachines/extensions",
-      "location": "[resourceGroup().location]",
-      "apiVersion": "2015-06-15",
-      "dependsOn": [
-        "[variables('CreatADDSCSid')]"
-      ],
-      "tags": {
-        "displayName": "Add-ADUsers"
-      },
-      "properties": {
-        "publisher": "Microsoft.Compute",
-        "type": "CustomScriptExtension",
-        "typeHandlerVersion": "1.4",
-        "autoUpgradeMinorVersion": true,
-        "settings": {
-          "fileUris": [
-            "[concat(parameters('_artifactsLocation'), '/scripts/Add-ADUsers.ps1')]",
-            "[concat(parameters('_artifactsLocation'), '/scripts/New-ADUsers.csv')]",
-            "[concat(parameters('_artifactsLocation'), '/scripts/Pics.zip')]"
-          ]
-        },
-        "protectedsettings": {
-          "commandToExecute": "[concat('powershell.exe -ExecutionPolicy Unrestricted -File Add-ADUsers.ps1 -UserName ', parameters('adminUsername'),' -Password ', parameters('adminPassword'),' -Share ', parameters('_ShareLocation'), ' -sasToken ', parameters('_ShareSasToken'),' -DNSName1 ', parameters('DMZ_DNSRecordsNames')[0], ' -DNSIPrecord1 ', parameters('DMZ_DNSRecordsIP')[0],' -DNSName2 ', parameters('DMZ_DNSRecordsNames')[1], ' -DNSIPrecord2 ', parameters('DMZ_DNSRecordsIP')[1],' -DNSName3 ', parameters('DMZ_DNSRecordsNames')[2],' -DNSIPrecord3 ', parameters('DMZ_DNSRecordsIP')[2],' -SipDomain ', parameters('DMZ_DNSRecordsNames')[3],' -SkypeIP ', parameters('DMZ_DNSRecordsIP')[3])]"
-        }
-      }
     }
 
   ],
