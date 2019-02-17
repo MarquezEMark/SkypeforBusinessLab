@@ -21,7 +21,7 @@ Select-AzureRmSubscription -SubscriptionName $subscriptionName
 # Deploy using with preconfigured parameters to avoid prompts#######################################################################
 $random=Get-Random -minimum 1000 -maximum 9999
 $ResourceGroupName = "sfblab1"
-$TemplateUri = "https://raw.githubusercontent.com/ibenbouzid/SkypeforBusiness_lab_V2/master/azuredeploy.json"
+$TemplateUri = "https://raw.githubusercontent.com/MarquezEMark/SkypeforBusinessLab/Branch1/azuredeploy.json"
 
 $StartTime = Get-Date
 Write-Host "Starting deployment of resource group : '$ResourceGroupName' on '$StartTime'"  
