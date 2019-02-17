@@ -40,7 +40,7 @@
     "EdgePublicCertificate": false,
     "CertificatePassword": "nullpassword",
     "apiVersion": "2015-06-15",
-    "_artifactsLocation": "https://raw.githubusercontent.com/MarquezEMark/SkypeforBusiness_lab_V3/Branch1",
+    "_artifactsLocation": "https://raw.githubusercontent.com/MarquezEMark/SkypeforBusinessLab/Branch1",
     "StorageAccountName": "[concat(resourceGroup().name, uniqueString(resourceGroup().id))]",
     "dnsPrefix": "[resourceGroup().name]",
     "LabCname": "[concat(variables('dnsPrefix'), 'dmz.', resourceGroup().location,'.cloudapp.azure.com.')]",
