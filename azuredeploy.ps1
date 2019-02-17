@@ -21,7 +21,7 @@ Select-AzureRmSubscription -SubscriptionName $subscriptionName
 # Deploy using with preconfigured parameters to avoid prompts#######################################################################
 $random=Get-Random -minimum 1000 -maximum 9999
 $ResourceGroupName = "sfblab1"
-$TemplateUri = "https://raw.githubusercontent.com/MarquezEMark/SkypeforBusinessLab/Branch1/azuredeploy.json"
+$TemplateUri = "https://raw.githubusercontent.com/MarquezEMark/SkypeforBusinessLab/Master/azuredeploy.json"
 
 $StartTime = Get-Date
 Write-Host "Starting deployment of resource group : '$ResourceGroupName' on '$StartTime'"  
@@ -35,7 +35,7 @@ $parameters = @{ `
     adminPassword= "@Passw0rd123"
     domainName="mydomain.local"
     dnsPrefix = "sfblab"+$random
-    _artifactsLocation = "https://raw.githubusercontent.com/MarquezEMark/SkypeforBusinessLab/Branch1"
+    _artifactsLocation = "https://raw.githubusercontent.com/MarquezEMark/SkypeforBusinessLab/Master"
     _SfBshareLocation= "your storage account name (not the path) that contains skype executable files"
     _SfBshareSasToken = "the token to access that share"
     }
@@ -54,8 +54,8 @@ Write-Host "Elapsed Deployment Time for '$ResourceGroupName' :'$Duration' "
 # Deploy the lab using the parameterfile##############################################################################
 $random=Get-Random -minimum 1000 -maximum 9999
 $ResourceGroupName = "sfblab2"
-$TemplateUri = "https://raw.githubusercontent.com/MarquezEMark/SkypeforBusinessLab/Branch1/azuredeploy.json"
-$TemplateParametersUri = "https://raw.githubusercontent.com/MarquezEMark/SkypeforBusinessLab/Branch1/azuredeploy.parameters.json"
+$TemplateUri = "https://raw.githubusercontent.com/MarquezEMark/SkypeforBusinessLab/Master/azuredeploy.json"
+$TemplateParametersUri = "https://raw.githubusercontent.com/MarquezEMark/SkypeforBusinessLab/Master/azuredeploy.parameters.json"
 
 $StartTime = Get-Date
 Write-Host "Starting deployment of resource group : '$ResourceGroupName' on '$StartTime'"  
